@@ -92,12 +92,12 @@ object MavenConfig {
 fun MavenPom.configureMavenCentralMetadata() {
     name.set("kLottieView")
     description.set("`kLottieView` is a lottie component that support Android/iOS/Ohos")
-    url.set("https://github.com/walkman707/x9nfof3keg")
+    url.set("https://github.com/walkman707/KuiklyLottie")
 
     licenses {
         license {
             name.set("Apache-2.0 license")
-            url.set("https://github.com/walkman707/x9nfof3keg/blob/main/LICENSE")
+            url.set("https://github.com/walkman707/KuiklyLottie/blob/main/LICENSE")
         }
     }
 
@@ -108,7 +108,7 @@ fun MavenPom.configureMavenCentralMetadata() {
         }
     }
     scm {
-        url.set("https://github.com/walkman707/x9nfof3keg")
+        url.set("https://github.com/walkman707/KuiklyLottie")
     }
 }
 

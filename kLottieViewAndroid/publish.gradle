@@ -24,11 +24,11 @@ publishing {
             pom {
                 name = PUBLISH_ARTIFACT_ID
                 description = "kLottieViewAndroid is a Android native component of kuiklyLottieView"
-                url = "https://github.com/walkman707/x9nfof3keg"
+                url = "https://github.com/walkman707/KuiklyLottie"
                 licenses {
                     license {
                         name = "Apache-2.0 license"
-                        url = "https://github.com/walkman707/x9nfof3keg/blob/main/LICENSE"
+                        url = "https://github.com/walkman707/KuiklyLottie/blob/main/LICENSE"
                     }
                 }
                 developers {
@@ -38,9 +38,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "https://github.com/walkman707/x9nfof3keg"
-                    developerConnection = "https://github.com/walkman707/x9nfof3keg"
-                    url = "https://github.com/walkman707/x9nfof3keg"
+                    connection = "https://github.com/walkman707/KuiklyLottie"
+                    developerConnection = "https://github.com/walkman707/KuiklyLottie"
+                    url = "https://github.com/walkman707/KuiklyLottie"
                 }
             }
         }

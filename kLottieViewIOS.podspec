@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.license          = { :type => "Apache-2.0", :file => "LICENSE" }
   spec.author           = { "" => "" }
   spec.ios.deployment_target = '12.0'
-  spec.source           = { :git => "https://github.com/walkman707/x9nfof3keg", :tag => "#{spec.version}" }
+  spec.source           = { :git => "https://github.com/walkman707/KuiklyLottie", :tag => "#{spec.version}" }
 
   spec.pod_target_xcconfig = {
         'VALID_ARCHS[sdk=iphonesimulator*]' => 'arm64 x86_64'
