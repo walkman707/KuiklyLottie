@@ -62,7 +62,7 @@ kotlin {
             baseName = "kLottieView"
             freeCompilerArgs = freeCompilerArgs + getCommonCompilerArgs()
             isStatic = true
-            license = "MIT"
+            license = "Apache-2.0"
         }
         extraSpecAttributes["resources"] = "['src/commonMain/assets/**']"
     }

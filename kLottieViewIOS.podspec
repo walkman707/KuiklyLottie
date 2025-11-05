@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
                         DESC
   spec.homepage         = "Link to the KuiklyLib_kuikly_ios Module homepage"
   spec.license          = { :type => "Apache-2.0", :file => "LICENSE" }
-  spec.author           = { "" => "" }
+  spec.author           = { "walkman707" => "" }
   spec.ios.deployment_target = '12.0'
   spec.source           = { :git => "https://github.com/walkman707/KuiklyLottie", :tag => "#{spec.version}" }
 

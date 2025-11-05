@@ -33,7 +33,7 @@ kotlin {
             baseName = "shared"
             freeCompilerArgs = freeCompilerArgs + getCommonCompilerArgs()
             isStatic = true
-            license = "MIT"
+            license = "Apache-2.0"
         }
     }
 

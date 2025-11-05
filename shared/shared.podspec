@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
     spec.homepage                 = 'Link to the Shared Module homepage'
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
-    spec.license                  = 'MIT'
+    spec.license                  = 'Apache-2.0'
     spec.summary                  = 'Some description for the Shared Module'
     spec.vendored_frameworks      = 'build/cocoapods/framework/shared.framework'
     spec.libraries                = 'c++'
