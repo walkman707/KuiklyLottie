@@ -1,0 +1,15 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@kuikly-open/render": '2.4.0',
+    "@ohos/apng": "^1.0.0-rc.8",
+    "@walkman707/kLottieViewOhos": "file:../../kLottieViewOhos",
+//    "@walkman707/kLottieViewOhos": "file:../../kLottieViewOhos/build/default/outputs/default/kLottieViewOhos.har",
+    "libentry.so": "file:./src/main/cpp/types/libentry"
+  }
+}

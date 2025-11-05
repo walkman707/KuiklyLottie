@@ -1,0 +1,62 @@
+apply plugin: 'maven-publish'
+apply plugin: 'signing'
+
+ext["signing.keyId"] = project.findProperty("signing_keyId") ?: System.getenv("signing_keyId")
+ext["signing.password"] = project.findProperty("signing_password") ?: System.getenv("signing_password")
+//ext["signing.secretKeyRingFile"] = project.findProperty("signing.secretKeyRingFile") ?: System.getenv("SIGNING_SECRET_KEY_RING_FILE")
+
+//task androidSourcesJar(type: Jar) {
+//    from android.sourceSets.main.java.srcDirs
+//    classifier = 'sources'
+//}
+version = MavenConfig.VERSION
+group = MavenConfig.GROUP
+def PUBLISH_ARTIFACT_ID = MavenConfig.ANDROID_PUBLISH_ARTIFACT_ID
+
+publishing {
+    publications {
+        mavenAar(MavenPublication) {
+//            artifact(androidSourcesJar)
+            artifact("$buildDir/outputs/aar/kLottieViewAndroid-release.aar")
+            groupId group
+            artifactId PUBLISH_ARTIFACT_ID
+            version version
+            pom {
+                name = PUBLISH_ARTIFACT_ID
+                description = "kLottieViewAndroid is a Android native component of kuiklyLottieView"
+                url = "https://github.com/walkman707/x9nfof3keg"
+                licenses {
+                    license {
+                        name = "Apache-2.0 license"
+                        url = "https://github.com/walkman707/x9nfof3keg/blob/main/LICENSE"
+                    }
+                }
+                developers {
+                    developer {
+                        id = "thirdparty"
+                        name = "Thirdparty Team"
+                    }
+                }
+                scm {
+                    connection = "https://github.com/walkman707/x9nfof3keg"
+                    developerConnection = "https://github.com/walkman707/x9nfof3keg"
+                    url = "https://github.com/walkman707/x9nfof3keg"
+                }
+            }
+        }
+    }
+    repositories {
+        mavenLocal()
+//        maven {
+//          url = layout.buildDirectory.dir("repo")
+//        }
+    }
+}
+
+signing {
+    def secretKey = project.findProperty("signing_secretKey") ?: System.getenv("signing_secretKey")
+    if (secretKey) {
+        useInMemoryPgpKeys(project.findProperty("signing.keyId"), secretKey, project.findProperty("signing.password"))
+    }
+    sign publishing.publications.mavenAar
+}

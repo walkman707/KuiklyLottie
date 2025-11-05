@@ -1,0 +1,29 @@
+PODS:
+  - OpenKuiklyIOSRender (2.4.0)
+  - SDWebImage (5.21.2):
+    - SDWebImage/Core (= 5.21.2)
+  - SDWebImage/Core (5.21.2)
+  - shared (1.0)
+
+DEPENDENCIES:
+  - OpenKuiklyIOSRender (~> 2.4.0)
+  - SDWebImage
+  - shared (from `../shared`)
+
+SPEC REPOS:
+  trunk:
+    - OpenKuiklyIOSRender
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  shared:
+    :path: "../shared"
+
+SPEC CHECKSUMS:
+  OpenKuiklyIOSRender: cbdd28763ff787c36f89a9b996e7408927ecb681
+  SDWebImage: 9f177d83116802728e122410fb25ad88f5c7608a
+  shared: 45c4d5a3fe6bf89e105d0ff0f3587f64ad21dd48
+
+PODFILE CHECKSUM: 8aeeacf0eac71f2f7e4aa47a9872fc0cd55bbb4a
+
+COCOAPODS: 1.16.2
